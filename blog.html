@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog || Donate Bangladesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header style="position: sticky; top: 0; z-index: 1000;">
+        <div class="navbar bg-[#F9F7F3]  px-0 py-4 md:px-12 md:py-6 flex justify-between items-center shadow-lg">
+            <div class="navbar-start flex-1 flex justify-center md:justify-start">
+                <a href="index.html"><button id="home" class="btn bg-[#B4F461] border-none text-sm md:text-base">Home</button></a>
+                <a href="blog.html"> <button id="blog" class="btn hidden bg-[#B4F461] border-none text-sm md:text-base">Blog</button></a>
+            </div> 
+            <div class="navbar-center flex-1 flex justify-center items-center">
+                <img src="images/donation.png" class="w-8 md:w-10 mr-2 md:mr-5" alt="Donation Logo">
+                <a class="font-bold text-xl md:text-3xl text-center">Donate Bangladesh</a>
+            </div>
+            <div class="navbar-end flex-1 flex justify-center md:justify-end items-center">
+                <img src="images/dollar.png" class="w-5 md:w-6 mr-2 md:mr-3" alt="Dollar Icon">
+                <p class="text-base md:text-xl text-gray-600 font-semibold">
+                    <samp id="main-balance">5500</samp> BDT
+                </p>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="w-[80%] m-auto space-y-14">
+        <h1 class="flex text-4xl font-bold mt-5">
+            Important FAQ
+            <img src="images/question.png" alt="" class="ml-5" width="40px">
+        </h1>
+
+        <!-- main from  -->
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p> <samp class="font-bold text-lg">Answer:</samp>
+                        The Document Object Model (DOM) is a programming interface for web documents. It represents the
+                        structure of an HTML or XML document as a tree of nodes, where each node corresponds to a part
+                        of the document (elements, attributes, or text). The DOM allows developers to interact with and
+                        manipulate the content, structure, and style of a webpage dynamically using programming
+                        languages like JavaScript.
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p><samp class="font-bold text-lg">Answer:</samp>
+                        I can select an element from the DOM using methods like: <br>
+                        1. document.getElementById('id') <br>
+                        2. document.getElementsByClassName('class') <br>
+                        3. document.getElementsByTagName('tag') <br>
+                        4. document.querySelector('selector') <br>
+                        5. document.querySelectorAll('selector')
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
+                    why is it useful?</div>
+                <div class="collapse-content">
+                    <p><samp class="font-bold text-lg">Answer:</samp>
+
+                        Event delegation is a technique in the DOM where instead of attaching event listeners to
+                        individual elements, you attach a single event listener to a parent element. This listener can
+                        capture events from child elements that bubble up the event chain. It is useful because it
+                        improves performance by reducing the number of event listeners and ensures that dynamically
+                        added elements also trigger the event without needing to bind new listeners.
+
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                    using the DOM?</div>
+                <div class="collapse-content">
+                    <p><samp class="font-bold text-lg">Answer:</samp>
+                        To manipulate an element's attributes and styles using the DOM:
+                        <br>
+                        1.Get an attribute: element.getAttribute('attributeName')<br>
+                        2.Set an attribute: element.setAttribute('attributeName', 'value')<br>
+                        3.Remove an attribute: element.removeAttribute('attributeName')<br>
+                        4.Get a style property: element.style.propertyName<br>
+                        5.Set a style property: element.style.propertyName = 'value'<br>
+                        6.Add a class: element.classList.add('className')<br>
+                        7.Remove a class: element.classList.remove('className')
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
